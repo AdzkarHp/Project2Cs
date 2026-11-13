@@ -1,41 +1,82 @@
-﻿using System;
-using System.Collections;
-using System.Diagnostics.CodeAnalysis;
+using System;
+using System.Data.Common;
+using System.Dynamic;
+using System.Runtime.ExceptionServices;
 
 class Program
-{ 
-    
-    static void Main(String[] args)
+{
+    public static void tambahBarang()
     {
-        List<string> nama_Barang = new List<string> {"Sendal swallow", "Snack", "Rokok surya"};
-        List<int> harga_Barang = new List<int> {15000, 5000, 31000};
-        
-        Console.WriteLine(" ");
-        Console.WriteLine("Daftar barang");
-        Console.WriteLine("======================================");
-        Console.WriteLine(" ");
-        
-        for(int i = 0; i < nama_Barang.Count; i++)
-        {
-            Console.WriteLine(nama_Barang[i] + " RP -" + harga_Barang[i] );
-        }
+        Console.WriteLine("\n");
 
-        Console.WriteLine(" ");
-        Console.Write("Masukan nama barang : ");
-        string? input_Barang = Console.ReadLine();
+        List<String> addBarang = new List<string>{};
 
-        if(string.IsNullOrEmpty(input_Barang))
+        char pilihan;
+        do
         {
-            Console.WriteLine("Lu mau beli apa si goblok !");
-        }
-        if(nama_Barang.Contains(input_Barang))
+            Console.Write("Masukan Item : ");
+            string tambahItem = Console.ReadLine();
+            addBarang.Add(tambahItem);
+            Console.WriteLine("Barang berhasil ditambahkan");
+
+            // ulang kembali
+            Console.Write("Apakah ada barang yang mau ditambahkan ? y/n ");
+            pilihan = Console.ReadKey().KeyChar;
+
+
+            Console.WriteLine("\n");
+
+            // Agar ketika user memasukan input selain y/n maka akan ada eror dan kembali 
+            char pilihanSolving = char.ToLower(pilihan);
+        } while (pilihan == 'y' || pilihan == 'Y');
+
+        Console.WriteLine("Anda memilih barang : ");
+
+        foreach(var lihatData in addBarang)
         {
-            int index = nama_Barang.IndexOf(input_Barang);
-            Console.WriteLine("Anda telah membeli " + nama_Barang + " -Rp" + harga_Barang);
-        }
-        else
-        {
-            Console.WriteLine("Ga ada barangnya disini kontol");
+            Console.WriteLine(lihatData);
         }
     }
-}
+
+    public static void tampilkanBarang()
+    {
+        
+    }
+
+    static void Main(String [] args)
+    {
+        Console.WriteLine("\n");
+        List<int> IDbarang = [1, 2, 3];
+        List<String> daftarBarang = new List<String> {"Pizza", "Burger", "Fried Chicken"};
+        List<int> hargaBarang = [10, 25, 30];
+        
+        // Iterate through the list
+        Console.WriteLine("List Elements:");
+        int index = 0;
+        foreach (int urutanID in IDbarang)
+        {
+            // EROR ADA DI BARIS INI
+            Console.WriteLine($"{urutanID}.{daftarBarang[index]} - {hargaBarang[index]}");
+            index++;
+        }
+
+        Console.WriteLine(" ");
+        Console.WriteLine("==================================================================================================");
+        Console.WriteLine("1. Tambah Barang");
+        Console.WriteLine("2. Hapus Barang");
+
+        Console.Write("Masukan pilihan : ");
+        int pilihan = Convert.ToInt32(Console.ReadLine());
+
+        switch (pilihan)
+        {
+            case 1:
+                tambahBarang();
+                break;
+
+            case 2:
+                tampilkanBarang();
+                break;
+        }
+    }
+}  
