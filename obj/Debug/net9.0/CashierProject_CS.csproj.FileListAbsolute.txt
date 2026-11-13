@@ -1,0 +1,14 @@
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\bin\Debug\net9.0\CashierProject_CS.exe
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\bin\Debug\net9.0\CashierProject_CS.deps.json
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\bin\Debug\net9.0\CashierProject_CS.runtimeconfig.json
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\bin\Debug\net9.0\CashierProject_CS.dll
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\bin\Debug\net9.0\CashierProject_CS.pdb
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.AssemblyInfo.cs
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.dll
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\refint\CashierProject_CS.dll
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.pdb
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\CashierProject_CS.genruntimeconfig.cache
+C:\Users\DELL\Documents\Visual Studio Code\CashierProject_CS\obj\Debug\net9.0\ref\CashierProject_CS.dll
